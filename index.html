@@ -23,31 +23,44 @@
         <p>Choose your crust, toppings, and even add extra cheese if you want. No more picking off the toppings you don't like. Each pizza from Pizza Extraordinaire is a custom pizza!</p>
 
         <!-- Order selections -->
-        <div id='pizza-order' class='row'>
-          <form id='order-form'>
-            <div class='row'>
+        <div id='pizza-order' class='well col-md-5 form-divs'>
+          <form id='order-form' class='form--horizontal'>
+
               <!-- Toppings -->
               <div class='col-sm-4 form-group'>
-                <h4 id='toppings-list'>Choose Meat Toppings:</h4>
+                <h4 id='toppings-list'>Meat Toppings:</h4>
                 <input type='checkbox' name='topping' class='selection' value=2> Pepperoni <br>
                 <input type='checkbox' name='topping' class='selection' value=2> Beef <br>
                 <input type='checkbox' name='topping' class='selection' value=2> Sausage <br>
                 <input type='checkbox' name='topping' class='selection' value=2> Ham <br>
                 <input type='checkbox' name='topping' class='selection' value=2> Bacon <br>
-                <h4>Choose Veggie Toppings</h4>
+                <input type='checkbox' name='topping' class='selection' value=3> Lobster <br>
+              </div>
+
+                <h4>Veggie Toppings</h4>
+                <div class='col-sm-4 form-group'>
                 <input type='checkbox' name='topping' class='selection' value=1> Tomato <br>
                 <input type='checkbox' name='topping' class='selection' value=1> Olive <br>
                 <input type='checkbox' name='topping' class='selection' value=1> Spinach <br>
-                <input type='checkbox' name='topping' class='selection' value=1> Artichoke hearts <br>
-                <p>--</p>
+                <input type='checkbox' name='topping' class='selection' value=1> Artichoke <br>
+                <input type='checkbox' name='topping' class='selection' value=1> Onion <br>
+                <input type='checkbox' name='topping' class='selection' value=1> Jalepeno <br>
+                <input type='checkbox' name='topping' class='selection' value=1> Mushroom <br>
+                <input type='checkbox' name='topping' class='selection' value=1> Peppers <br>
+                <input type='checkbox' name='topping' class='selection' value=1> Asparagus <br>
+              </div>
+              <div class='col-sm-6 form-group'>
+                <h4>Cheese</h4>
                 <input type='checkbox' name='topping' class='selection' value=2> Extra Cheese <br>
                 <input type='checkbox' name='topping' class='selection' value=-1> No Cheese <br>
               </div>
+            </div>
+
 
                 <!-- Size -->
-                <div class='col-sm-4 form-group'>
+                <div class='well col-md-4 form-divs'>
                   <h4>Choose Size:</h4>
-                  <select id='size-selecte'>
+                  <select id='size-select'>
                       <option value=0>Personal</option>
                       <option value=1>Small</option>
                       <option value=2>Medium</option>
@@ -57,7 +70,7 @@
                 </div>
 
                 <!-- Crust -->
-                <div class='col-sm-4 form-group'>
+                <div class='well col-md-4 form-divs'>
                   <h4>Choose Crust:</h4>
                   <select id='crust-select'>
                     <option value=0>Thin</option>
@@ -66,11 +79,22 @@
                     <option value=3>Chicago Deep Dish</option>
                   </select>
                 </div>
+
+              <!-- Sauce -->
+              <div class='well col-md-4 form-divs'>
+                <h4>Choose Sauce:</h4>
+                <select id='sauce-select'>
+                  <option value=0>No Sauce</option>
+                  <option value=1>Traditional</option>
+                  <option value=2>Alfredo</option>
+                  <option value=2>Buttery Garlic</option>
+                </select>
               </div>
+            </div>
 
               <div class='row' id='order-btn'>
                 <!-- Submit -->
-                <button type='submit' class='btn btn-info'>Submit Order</button>
+                <button type='submit' class='mybtn btn'>Submit Order</button>
               </div>
             </form>
           </div>
@@ -78,7 +102,7 @@
           <hr>
               <!-- Price -->
               <div id='pizza-price' class='row'>
-                <h3>Total cost of pizza is $<span id='order-price'</span>.</h3>
+                <h3>Total cost of pizza is $<span id='order-price'></span>.</h3>
                   <br>
                   <!-- Refreshes page as new -->
                   <form action='index.html' method='post'>
