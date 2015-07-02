@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <!-- STYLES -->
       <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
       <link rel='stylesheet' href='css/styles.css'>
-
-      <!-- SCRIPTS -->
       <script src='js/jquery-1.11.3.js'></script>
       <script src='js/scripts.js'></script>
 
-      <!-- TITLE -->
+      <!-- title -->
       <!-- Enter link to image here -->
       <title>Pizza Extraordinaire</title>
 
@@ -37,7 +34,7 @@
                 <input type='checkbox' name='topping' class='selection' value=2> Sausage <br>
                 <input type='checkbox' name='topping' class='selection' value=2> Ham <br>
                 <input type='checkbox' name='topping' class='selection' value=2> Bacon <br>
-                <h4 id='toppings-list'>Choose Veggie Toppings</h4>
+                <h4>Choose Veggie Toppings</h4>
                 <input type='checkbox' name='topping' class='selection' value=1> Tomato <br>
                 <input type='checkbox' name='topping' class='selection' value=1> Olive <br>
                 <input type='checkbox' name='topping' class='selection' value=1> Spinach <br>
@@ -47,25 +44,23 @@
                 <input type='checkbox' name='topping' class='selection' value=-1> No Cheese <br>
               </div>
 
-
-
                 <!-- Size -->
                 <div class='col-sm-4 form-group'>
                   <h4>Choose Size:</h4>
-                  <select id='pizza_size'>
-                    <option value=0>Personal</option>
-                    <option value=1>Small</option>
-                    <option value=2>Medium</option>
-                    <option value=3>Large</option>
-                    <option value=4>Ginormous</option>
+                  <select id='size-selecte'>
+                      <option value=0>Personal</option>
+                      <option value=1>Small</option>
+                      <option value=2>Medium</option>
+                      <option value=3>Large</option>
+                      <option value=4>Ginormous</option>
                   </select>
                 </div>
 
                 <!-- Crust -->
                 <div class='col-sm-4 form-group'>
                   <h4>Choose Crust:</h4>
-                  <select id='crust'>
-                    <option value=0>Thin /% Crispy</option>
+                  <select id='crust-select'>
+                    <option value=0>Thin</option>
                     <option value=1>Regular</option>
                     <option value=2>Pan</option>
                     <option value=3>Chicago Deep Dish</option>
@@ -79,7 +74,7 @@
               </div>
             </form>
           </div>
-          <p>--</p>
+          <br>
           <hr>
               <!-- Price -->
               <div id='pizza-price' class='row'>
@@ -87,7 +82,7 @@
                   <br>
                   <!-- Refreshes page as new -->
                   <form action='index.html' method='post'>
-                    <button id='logout-btn' class-'btn btn-warning'>Customize Again</button>
+                    <button id='logout-btn' class='btn btn-warning'>Customize Again</button>
                   </form>
                 </div>
               </div>

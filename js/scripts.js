@@ -1,4 +1,4 @@
-//Pizza object with priceIt method
+//pizza object with priceIt method
 var pizza = {
   priceIt: function() {
     return 10 + (this.topping * 2)
@@ -18,19 +18,18 @@ $(document).ready(function() {
       toppings_multiplier += +this.value;
     });
 
-    // SETS SIZE SELECTION TO USER INPUT
-      var size_selection = parseInt($('#size-selection').val());
+      var size_select = parseInt($('#size-select').val()) || 0;
 
-      // SETS CRUST SELECTION TO USER INPUT
-      var crust_selection = parseInt($('#crust-selection').val());
+      var crust_select = parseInt($('#crust-select').val()) || 0;
 
     var pizza_order = Object.create(pizza);
 
     pizza_order.topping = toppings_multiplier;
-    pizza_order.pizza_size = size_selection;
-    pizza_order.crust = crust_selection;
+    pizza_order.pizza_size = size_select;
+    pizza_order.crust = crust_select;
 
     var pizza_price = pizza_order.priceIt();
+
     $('#pizza-price').show();
 
     $('#order-price').text(pizza_price);
