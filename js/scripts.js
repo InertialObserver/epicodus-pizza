@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     $('#order-price').text(pizza_price);
 
-    //unhighlights button when not hover
+    //unhighlights button when not hovering
     $(".btn").mouseup(function() {
       $(this).blur();
     });
