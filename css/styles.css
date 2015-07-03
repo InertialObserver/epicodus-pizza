@@ -1,9 +1,9 @@
 h1 {
   color: red;
-  background: #7f7f7f;
-  background: rgba(255, 255, 255, 0.5);
+  background-color: black;
   text-align:center;
   margin-bottom: 50px;
+  font-weight:bolder;
 }
 
 h2 {
@@ -47,7 +47,7 @@ p {
 }
 
 body {
-
+  height: 100%;
   background: url("../img/background_pizza.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -59,12 +59,18 @@ div {
     opacity: 0.8;
 }
 
-#margin {
-  margin-left: 50px;
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+#footer {
+	height:60px;
+	background-color: #f5f5f5 !important;
 }
 
-/*.transparent {
-
-  background: #7f7f7f;
-  background: rgba(255, 255, 255, 0.5);
-}*/
+#footer-wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+}
