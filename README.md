@@ -17,9 +17,11 @@ If you discover any bugs, feel free to create an issue on GitHub. Please add as 
 
 #Known Bugs
 
-It is necessary to scroll down to see the price of the pizza after clicking the submit button. 
+Depending on the size of your screen, it may be necessary to scroll down to see the price of the pizza after clicking the submit button. 
 
 There is not yet a formula to calculate the price based on quantity ordered.
+
+The price stays the same regardless of the number or type of toppings chosen.
 
 LICENSE
 
